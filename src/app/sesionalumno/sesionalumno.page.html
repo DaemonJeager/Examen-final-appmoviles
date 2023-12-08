@@ -1,0 +1,71 @@
+<style>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #f6f6f6;
+  }
+  body, ion-content {
+    background-image: url('/assets/icon/foto1.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+
+  p,
+  span,
+  div {
+    color: #666666;
+  }
+
+  a,
+  .button {
+    background-color: #007BFF;
+    color: #FFFFFF;
+  }
+
+  a:hover,
+  .button:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+<ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title style="text-align: center;">Inicio de sesión del alumno</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <form [formGroup]="formularioLogin">
+      <div class="user-box">
+
+        <br><ion-input formControlName="userName" type="text" required></ion-input>
+        <label>Usuario</label>
+
+      </div>
+      <div class="user-box">
+
+        <br><ion-input formControlName="userPass" type="password" required></ion-input>
+        <label>Contraseña</label>
+      </div>
+      <a (click)="guardarDatosAlumno()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Iniciar sesión como alumno
+      </a>
+    </form>
+    <br>
+    <ion-button class="recover-button" expand="block" color="primary" routerLink="/restablecer"> Recuperar Contraseña
+    </ion-button>
+  </div>
+
+  <br>
+  <br>
+</ion-content>

@@ -1,0 +1,158 @@
+html, body {
+    height: 100%;
+    margin:0;
+    padding:0;
+    color: #ffffff;
+    font-family: sans-serif;
+    background: linear-gradient(#000000, #000000);
+    background-image: url('/src/assets/icon/foto1.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .user-box {
+    --padding-start: 0;
+    --padding-end: 0;
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --highlight-height: 1px;
+    --highlight-color: #ff0000;
+    --highlight-color-focused: #000000;
+    --background: transparent;
+    --background-focused: transparent;
+    --background-hover: transparent;
+    --border-style: none;
+    --box-shadow: none;
+    --placeholder-color: #fff;
+    --placeholder-opacity: 1;
+    --placeholder-font-style: italic;
+    --placeholder-font-size: 1em;
+    --placeholder-font-weight: 200;
+    --color: #fff;
+  }
+  
+  .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ff0000;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box {
+    
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(247, 247, 247, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(254, 246, 0, 0.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box ion-input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box ion-input:focus ~ label,
+  .login-box .user-box ion-input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #00d9ff;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box a:hover {
+    background: #6c6a6a;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #f80000,
+                0 0 25px #f9ffff,
+                0 0 50px #ffffff,
+                0 0 100px #fbffff;
+  }
+  
+  .login-box a span {
+  position: absolute;
+  display: block;
+  color: #000000; /* Cambia el color del texto a negro */
+}
+
+.recover-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000000; /* Cambia el color del texto a negro */
+  background-color: #000000; /* Cambia el color de fondo a gris claro */
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  padding: 5px;/* Reduce el padding para hacer el botón más pequeño */
+  /* ... */
+}
+
+.recover-button:hover {
+  background: #FFFF00; /* Cambia el color de fondo a amarillo al pasar el mouse */
+  color: #000000; /* Cambia el color del texto a negro al pasar el mouse */
+  border-radius: 5px;
+  box-shadow: 0 0 5px #D3D3D3,
+              0 0 25px #D3D3D3,
+              0 0 50px #D3D3D3,
+              0 0 100px #D3D3D3;
+}
+  

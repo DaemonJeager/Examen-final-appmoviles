@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="primary">Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+<style>
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    position: bottom;
+  }
+
+  ion-list {
+  margin-bottom: 0;
+}
+
+footer {
+  margin-top: 0;
+}
+</style>
+<ion-content class="container"> Control de Asistencia
+
+  <ion-list>
+    <ion-item *ngFor="let personaje of personaje">
+      <ion-avatar slot="start">
+        <img [src]="personaje.image" alt="">
+      </ion-avatar>
+      <ion-label> {{ personaje.firstName }} {{personaje.lastName}}
+        
+        <br>
+        <ion-radio-group [(ngModel)]="personaje.status">
+          <ion-item>
+            <ion-label>Presente</ion-label>
+            <ion-radio slot="start" value="Presente"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Ausente</ion-label>
+            <ion-radio slot="end" value="ausente"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+         <!-- Botón para mostrar el código QR -->
+    <ion-button (click)="personaje.showQrCode = !personaje.showQrCode">Mostrar código QR</ion-button>
+    <!-- Card que muestra el código QR -->
+    <ion-card *ngIf="personaje.showQrCode">
+      <ion-card-content>
+        <img [src]="personaje.qrCodeUrl" alt="Código QR">
+      </ion-card-content>
+    </ion-card>
+      </ion-label>
+      <ion-button routerLink="/home2">Ir a la camara</ion-button>
+    </ion-item>
+  
+  </ion-list>
+
+  <ion-button expand="block" color="primary" routerLink="/login">Cerrar Sesión</ion-button>
+
+  <footer>
+    Bienvenido: {{nombreUsuario}}
+  </footer>
+</ion-content>

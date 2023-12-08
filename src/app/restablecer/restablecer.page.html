@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="primary">Recuperar Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="login-box">
+    <br>
+   
+<form [formGroup]="formulariorestablecer">
+<div class="login-box">
+  <ion-item>
+    <ion-label position="floating">Contraseña Nueva</ion-label>
+    <br>
+    <ion-input formControlName="userPass" type="password" placeholder=""></ion-input>
+  </ion-item>
+  <ion-button (click)="restablecer()"    class="ion-padding" color="primary">Recuperar Contraseña</ion-button>
+</div>
+</form>
+
+  </div>
+</ion-content>
+
+<!-- [routerLink]="['/login']" -->

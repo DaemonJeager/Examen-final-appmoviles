@@ -1,0 +1,49 @@
+.container {
+  padding: 15px;
+}
+
+ion-avatar {
+  margin-right: 15px;
+}
+
+ion-label {
+  display: flex;
+  flex-direction: column;
+  color: #000000; // Letras negras
+}
+
+ion-radio-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+ion-button {
+  margin-top: 20px;
+  border: 1px solid #000000; // Bordes negros
+  color: #000000; // Letras negras
+}
+
+body {
+  background-color: #FFFFFF; // Fondo blanco
+  color: #000000; // Letras negras
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000000; // Letras negras
+}
+
+p, span, div {
+  color: #000000; // Letras negras
+}
+
+a, .button {
+  background-color: #FFFFFF; // Fondo blanco
+  color: #000000; // Letras negras
+  border: 1px solid #000000; // Bordes negros
+}
+
+a:hover, .button:hover {
+  background-color: #CCCCCC; // Fondo gris al pasar el ratón
+}

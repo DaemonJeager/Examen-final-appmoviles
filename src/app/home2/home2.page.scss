@@ -1,0 +1,21 @@
+body {
+    background-color: #F0F0F0;
+    color: #333333;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+  }
+  
+  p, span, div {
+    color: #666666;
+  }
+  
+  a, .button {
+    background-color: #007BFF;
+    color: #FFFFFF;
+  }
+  
+  a:hover, .button:hover {
+    background-color: #0056b3;
+  }

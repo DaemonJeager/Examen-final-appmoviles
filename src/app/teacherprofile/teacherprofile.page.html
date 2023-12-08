@@ -1,0 +1,12 @@
+<ion-content>
+<h1>Bienvendio {{ name }}</h1>
+<p>Edad: {{ age }}</p>
+<img [src]="">
+
+<div *ngFor="let course of courses" style="margin-bottom: 20px;">
+  <h2>{{ course.name }}</h2>
+  <img [src]="course.qrCode" style="margin-bottom: 10px;">
+  <ion-button (click)="navigateToHome(course)">Ir al curso</ion-button>
+</div>
+
+</ion-content>
